@@ -202,7 +202,7 @@ const HomePage = () => {
             </div>
 
             <div>
-                <h1 className='my-20'>Job Application Service Plans</h1>
+                <h1 className='my-20'>Job Application Service Plans </h1>
             </div>
 
             <div className='h-[100vh]'>
