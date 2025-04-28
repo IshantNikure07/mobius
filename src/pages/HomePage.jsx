@@ -98,8 +98,8 @@ const HomePage = () => {
                 style={{ backgroundImage: `url(${bg})` }}>
 
                 <div className='mx-72 text-white'>
-                    <h1 className='text-4xl my-14'>About Us</h1>
-                    <div className='flex  justify-center items-center gap-16 mx-24'>
+                    <h1 className='text-4xl my-12'>About Us</h1>
+                    <div className='flex  justify-center items-center gap-16 mx-20'>
                         <img src={Ashwin} className='scale-75' alt="" />
                         <div className='flex flex-col gap-3'>
 
@@ -107,7 +107,7 @@ const HomePage = () => {
                             <p className='text-xs'>Ashwin's vision with Mobius is to give job seekers a significant advantage in securing the roles of their dreams.</p>
                         </div>
                     </div>
-                    <div className='flex  justify-center items-center gap-16 mx-24'>
+                    <div className='flex  justify-center items-center gap-16 mx-20'>
                         <img src={Nichole} className='scale-75' alt="" />
                         <div className='flex flex-col gap-3'>
 
