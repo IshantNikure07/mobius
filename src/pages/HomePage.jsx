@@ -16,6 +16,7 @@ import { MdHandshake } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import { FaStar } from "react-icons/fa6";
 import { IoCheckmarkCircle } from "react-icons/io5";
+import Footer from '../components/Footer'
 
 const howWeWork = [
     { number: 1, text: "Submit Intake Forms " },
@@ -36,7 +37,7 @@ const HomePage = () => {
                 <header className='flex justify-between items-center  m-5'>
                     <h1 className='flex  p-2 items-center text-white gap-2'> <img src={Logo} className='h-10 w-10' alt="" />MobiusEngine</h1>
 
-                    <div className='flex gap-5 text-white'>
+                    <div className='flex gap-8 text-xl text-white'>
                         <Link to="/Home"> Home</Link>
                         <Link> About us</Link>
                         <Link> Plans</Link>
@@ -45,7 +46,7 @@ const HomePage = () => {
                         <Link> More </Link>
                     </div>
 
-                    <button className='bg-white text-blue rounded-full px-5 py-1'>
+                    <button className='bg-white text-[#0649E7] rounded-full px-5 py-1'>
                         Get Started
                     </button>
                 </header>
@@ -54,10 +55,10 @@ const HomePage = () => {
                     <div className='w-[70%] space-y-8'>
 
                         <h1 className='font-bold text-6xl text-white'>Land Job Interviews <span className='text-blue-800'>10x</span> faster</h1>
-                        <p className='w-[70%] '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, ea! Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, libero.</p>
-                        <button className='bg-white text-blue rounded-full px-5 py-1'>
-                            Get Started
-                        </button>
+                        <p className='w-[70%] text-white'>Custom-built resumes that match your goals, keywords, and recruiter expectations.</p>
+                        <button className='text-[#0649E7] bg-white gap-3 justify-center items-center rounded-full px-5 py-2 flex mt-8'>
+                                Get Started <FiArrowRight />
+                            </button>
                     </div>
 
                     <div className='w-[30%] relative'>
@@ -381,9 +382,124 @@ const HomePage = () => {
                      </div>
             </div>
 
-            <div className='h-[100vh]'>
+            {/* Resume Building Coaching */}
+            <div className='mx-82 bg-white text-[#0649E7] h-[60vh] mb-70'>
+                <h1 className='text-4xl mt-14'>Resume Building and Coaching</h1>
+                <p className='text-sm my-1'>Lets talk about where you headed - and how you resume can getyou there</p>
+                <p className='text-sm font-semibold mb-10'>Shedule a call to get started</p>
+                <div className='flex justify-center gap-8'>
 
+                    {/* Card */}
+                   <div className='border border-[#0649E7] w-62 h-[65vh] rounded-2xl text-[#0649E7] p-3 gap-4 flex flex-col '>
+                    <div>
+
+                        <h1 className='text-2xl font-semibold'>Resume Rebuild</h1>
+                        <p className='text-xs '>Crafted for senior to VP-level professionals ready for their next ..</p>
+                    </div>
+                        <h1 className='font-bold text-4xl'>$1000<span className='text-xl font-normal'>onetime</span></h1>
+                        <div>
+                             <hr className='text-gray-500 ' />
+                             <div className='h-[30vh]'>
+
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>3× 30-min coaching </p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Focused on storytelling, not just formatting</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Analyst + full application team on Pacific hours</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Tailored to your target industry, company, or role</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Direct work with our co-founder (ex-Google, JP Morgan)</p>
+                             </div>
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Executive coaching from UC Berkeley alum with 10+ yrs experience</p>
+                             </div>
+                             {/* <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Resume Rebuild portfolio available upon request</p>
+                             </div> */}
+                             </div>
+                             <button className='bg-[#0649E7] gap-3  text-white justify-center items-center border rounded-full px-5 py-2 flex mt-8'>
+                                Get Started <FiArrowRight />
+                            </button>
+                        </div>
+                   </div>
+
+                    {/* Card 2*/}
+                   <div className='border border-[#0649E7] w-62 h-[65vh] rounded-2xl text-[#0649E7] p-3 gap-4 flex flex-col '>
+                    <div>
+
+                        <h1 className='text-2xl font-semibold'>Interview Prep</h1>
+                        <p className='text-xs '>Two sessions to sharpen your story, confidence, and clarity — fast.</p>
+                    </div>
+                        <h1 className='font-bold text-4xl'>$500<span className='text-xl font-normal'>onetime</span></h1>
+                        <div>
+                             <hr className='text-gray-500 ' />
+                             <div className='h-[30vh]'>
+
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>2× 45-min live coaching with our co-founder </p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Real-time, practical feedback</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Build clarity, empathy & executive presence</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>For senior and leadership roles — technical & non-technical</p>
+                             </div>
+                            
+                             </div>
+                             <button className='bg-[#0649E7] gap-3  text-white justify-center items-center border rounded-full px-5 py-2 flex mt-8'>
+                                Get Started <FiArrowRight />
+                            </button>
+                        </div>
+                   </div>
+
+                  
+
+                </div>
             </div>
+
+            {/* Advance */}
+            <div className='mx-82 bg-[#0649E7] text-white h-[38vh] rounded-2xl p-10 flex justify-center   '>         
+                    <div className='flex justify-between w-full items-center '>
+
+                      
+                        <h1 className='font-normal text-2xl w-[150px]'>STILL HAVE DOUGHTS ?</h1>
+                        <p className='font-bold text-5xl'>Contact Us</p>
+                       
+                        <div className='bg-white rounded-full w-13 py-4 flex items-center text-[#0649E7] justify-center justify-self-end m-3'><FiArrowRight size={20} /></div>                  </div>
+            </div>
+
+            {/* Footer */}
+            <Footer/>
+            
         </section>
     )
 }
