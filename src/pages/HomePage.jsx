@@ -15,6 +15,7 @@ import { TbHeartHandshake } from "react-icons/tb";
 import { MdHandshake } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import { FaStar } from "react-icons/fa6";
+import { IoCheckmarkCircle } from "react-icons/io5";
 
 const howWeWork = [
     { number: 1, text: "Submit Intake Forms " },
@@ -33,7 +34,7 @@ const HomePage = () => {
             >
                 {/* Header Section */}
                 <header className='flex justify-between items-center  m-5'>
-                    <h1 className='flex  p-2 items-center text-white gap-2'> <img src={Logo} className='h-10 w-10' alt="" />MobuisEngine</h1>
+                    <h1 className='flex  p-2 items-center text-white gap-2'> <img src={Logo} className='h-10 w-10' alt="" />MobiusEngine</h1>
 
                     <div className='flex gap-5 text-white'>
                         <Link to="/Home"> Home</Link>
@@ -200,9 +201,184 @@ const HomePage = () => {
                 </div>
                 
             </div>
+            
+            {/* Job Application Service Plans */}
+            <div className='mx-82 bg-white text-[#0649E7] h-[60vh] mb-35'>
+                <h1 className='text-4xl my-14'>Job Application Service Plans </h1>
+                <div className='flex justify-between  '>
 
-            <div>
-                <h1 className='my-20'>Job Application Service Plans </h1>
+                    {/* Card */}
+                   <div className='border border-[#0649E7] w-62 h-[60vh] rounded-2xl text-[#0649E7] p-3 gap-4 flex flex-col '>
+                        <h1 className='text-2xl font-semibold'>April Promo</h1>
+                        <h1 className='font-bold text-4xl'>$35<span className='text-xl font-normal'>/week</span></h1>
+                        <div>
+                             <hr className='text-gray-500 ' />
+                             <div className='h-[30vh]'>
+
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Curated jobs from 1M+ listings, refreshed every 48 hours</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Up to 20 human-applied roles per week (no bots, no fluff — just real company sites)</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Need more? Add extra apps for just $1.5 each</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Your own dedicated application analyst</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Personalized with up to 10 filters & 5 job titles</p>
+                             </div>
+                             </div>
+                             <button className='bg-[#0649E7] gap-3  text-white justify-center items-center border rounded-full px-5 py-2 flex my-5'>
+                                Get Started <FiArrowRight />
+                            </button>
+                        </div>
+                   </div>
+
+                    {/* card 2 */}
+                   <div className='border border-[#0649E7] w-62 h-[60vh] rounded-2xl text-[#0649E7] p-3 gap-4 flex flex-col '>
+                        <h1 className='text-2xl font-semibold'>Starter</h1>
+                        <h1 className='font-bold text-4xl'>$50<span className='text-xl font-normal'>/week</span></h1>
+                        <div>
+                             <hr className='text-gray-500 ' />
+                             <div className='h-[30vh]' >
+
+                           
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>All the perks of the Promo Plan, plus:</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Resume review & story-focused feedback</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Dedicated search specialist</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Up to 50 job apps/week</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Extra apps at $1.5 each</p>
+                             </div>
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Analyst support within 6 hours (SLA/PST hours)</p>
+                             </div>
+                             </div>
+                             <button className='bg-[#0649E7] gap-3  text-white justify-center items-center border rounded-full px-5 py-2 flex my-5'>
+                                Get Started <FiArrowRight />
+                            </button>
+                        </div>
+                   </div>
+
+                   {/* card 3 */}
+                   <div className='border border-[#0649E7] w-62 h-[60vh] rounded-2xl text-[#0649E7] p-3 gap-4 flex flex-col '>
+                        <h1 className='text-2xl font-semibold'>Plus</h1>
+                        <h1 className='font-bold text-4xl'>$100<span className='text-xl font-normal'>/week</span></h1>
+                        <div>
+                             <hr className='text-gray-500 ' />
+                             <div className='h-[30vh]'>
+
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Everything in Starter, with more muscle:</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Up to 75 apps/week</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Apply to 15 job titles</p>
+                             </div>
+                            
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Analyst + full application team on Pacific hours</p>
+                             </div>
+                            
+                             </div>
+                             <button className='bg-[#0649E7] gap-3  text-white justify-center items-center border rounded-full px-5 py-2 flex my-5'>
+                                Get Started <FiArrowRight />
+                            </button>
+                        </div>
+                   </div>
+
+                </div>
+            </div>
+
+            {/* Advance */}
+            <div className='mx-82 bg-[#0649E7] text-white h-[38vh] rounded-2xl p-5 '>
+            
+                    <div className='flex justify-between'>
+
+                       <div>
+                        <h1 className='font-semibold text-2xl'>Advance</h1>
+                        <p>Top-tier support for serios job hunters</p>
+                       </div>
+                       <h1 className='font-bold text-4xl'>$150<span className='text-xl font-normal'>/week</span></h1>
+                    </div>
+                    <hr className='text-white my-7' />
+                     <div className='flex justify-between' >
+                        <div className='gap-2 flex flex-col'>
+
+                        
+                         <div className='gap-5 flex w-[100%]'>
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%] '>Everything is plus</p>
+                             </div>
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Custom Resumes and cover letter</p>
+                             </div>
+                         </div>
+                         <div className='gap-5 flex w-[100%]'>
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>20 fully customised application/week</p>
+                             </div>
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Help with complex job search </p>
+                             </div>
+                         </div>
+                         <div className='gap-5 flex w-[100%]'>
+
+                             <div className='flex gap-1'>
+                                <IoCheckmarkCircle size={25} className='text-green-600'/>
+                                <p className='text-xs my-1 w-[98%]'>Excess to senior resume expert , Founder and Exec coaches</p>
+                             </div>
+                         </div>
+
+                         </div>
+                         <button className='text-[#0649E7] gap-3  bg-white mt-20 items-center border rounded-full px-5 py-2 flex my-5'>
+                                Get Started <FiArrowRight />
+                         </button>
+
+                     </div>
             </div>
 
             <div className='h-[100vh]'>
